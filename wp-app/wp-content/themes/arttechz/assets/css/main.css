@@ -1,0 +1,113 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+html {
+    margin-top: 0 !important;
+    right: 0;
+    left: 0;
+    top: 0;
+    position: relative;
+    width: 100%;
+}
+
+body {
+    background-color: #16181c;
+    width: 100%;
+}
+
+#navbar {
+    animation: sticky 1s 0.3s ease-out forwards;
+    transition: top 0.3s;
+    z-index: 99;
+    width: 100%;
+}
+
+.sticky {
+    animation: sticky 1s 0.3s ease-out forwards;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+.logo {
+    width: 45px;
+    float: left;
+}
+
+.sidenav {
+    height: 120%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#particle-slider {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.slide-text {
+    top: 247px;
+    position: absolute;
+    width: 100%;
+    font-size: 1.9em;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+.vc_row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1256px) {
+}
+
+@media (max-width: 768px) {
+    .slide-text {
+        top: 150px;
+    }
+}

@@ -1,0 +1,17 @@
+# Ignore everything
+/*
+# But not these files...
+!.gitignore
+!wp-app
+!wp-data
+!config
+!.env
+!docker-compose.yml
+
+# sub dir
+/wp-app/wp-content/themes/arttechz/dist/*
+/wp-app/wp-content/themes/arttechz/node_modules/*
+
+
+# ...even if they are in subdirectories
+# if the files to be tracked are in subdirectories
